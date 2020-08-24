@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Contact Adrenaline Automotive Consulting</title>
+<meta name="description" content="Adrenaline Automotive Consultants provides services to automotive dealerships in South-Western Ontario and the Midwest of the Unites States looking to improve their process and sales. ">
+    <meta name="keywords" content="automotive, consultant, dealer, dealership, sales, process, improve, help, assist">
+    <meta name="author" content="Toby Leftly">
+    <meta name="email" content="toby@accentit.ca">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="screen.css" type="text/css" media="screen" charset="utf-8" />
+<script type="text/javascript" src="scripts/swfobject.js"></script>
+<script type="text/javascript">
+swfobject.embedSWF("flash/home_flash.swf", "flash-home", "898", "443", "9.0.0", "expressInstall.swf");
+</script>
+<!--[if lte IE 6]> 
+    <link type="text/css" rel="stylesheet" href="ie6.css" /> 
+<![endif]-->
+<script type="text/javascript" src="jquery-1.2.6.min.js"></script>
+
+ <script type="text/javascript">                                         
+   // we will add our javascript code here           
+   
+$(document).ready(function(){
+$("form").submit(function(){
+
+var str = $("form").serialize();
+
+   $.ajax({
+   type: "POST",
+   url: "contact.php",
+   data: str,
+   success: function(msg){
+    
+$("#note").ajaxComplete(function(event, request, settings){
+
+if(msg == 'OK') // Message Sent? Show the 'Thank You' message and hide the form
+{
+result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+$("#fields").hide();
+}
+else
+{
+result = msg;
+}
+
+$(this).html(result);
+
+});
+
+}
+
+ });
+
+return false;
+
+});
+
+});
+
+ </script>
+</head>
+
+<body>
+	
+	<div id="main">
+		
+		<div id="flash-home">
+			If you can see this, you do not have Adobe <a href="http://adobe.com">Flash</a>.
+		</div>
+		
+		<ul id="navi">
+			
+			<li id="lspace"><i>spacer</i></li>
+			<li><a href="about.html" id="first"><i>About Us</i></a></li>
+			<li><a href="services.html" id="second"><i>Our Services</i></a></li>
+			<li><a href="articles.html" id="third"><i>Articles</i></a></li>
+			<li><a href="contact.html" id="fourth"><i>Contact Us</i></a></li>
+			<li id="rspace"><i>spacer</i></li>
+			
+		</ul>
+		
+		<div id="cont-content">
+		
+			<div id="maincol">
+				<h2>Contact Adrenaline</h2>
+				<p style="margin-bottom: 16px;">
+					Adrenaline Automotive is on standby to jump start your business. Please email us with comments or feedback at <a href="mailto:info@adrenaline4auto.com">info@adrenaline4auto.com</a>.
+				</p>
+				
+				<!--
+				
+				<fieldset class="info_fieldset">
+
+				<div id="note"></div>
+				<div id="fields">
+
+				<form action="javascript:alert('success!');">
+				<label>Name</label><INPUT class="textbox" type="text" name="name" value=""><br />
+
+				<label>E-Mail</label><INPUT class="textbox" type="text" name="email" value=""><br />
+
+				<label>Subject</label><INPUT class="textbox" type="text" name="subject" value=""><br />
+
+				<label>Comments</label><TEXTAREA class="textbox" NAME="message" ROWS="5" COLS="25"></TEXTAREA><br />
+
+				<label>&nbsp;</label><INPUT class="button" type="submit" name="submit" value="Send Message">
+				</form>
+				</div>
+
+				</fieldset>
+				
+				-->
+				
+			</div>
+			
+			<div id="sidebar">
+			
+			<h3>Contact Details</h3>
+			<img src="images/cont_img2.jpg" />
+				<ul>
+				<li><b>Mike Nelson</b></li>
+				<li>519-984-8802</li>
+				<li><a href="mailto:mike@adrenaline4auto.com">mike@adrenaline4auto.com</a></li>
+				</ul>
+				<p>Adrenaline Automotive Consulting proudly serving automotive dealers and manufactures throughout out Canada and the United States of America.</p>
+			</div>
+			
+		</div> <!-- content ends -->
+		
+		<div id="footer">
+			
+			tel: 519.984.8802 <span class="bar">|</span> <a href="mailto:info@adrenaline4auto.com">info@adrenaline4auto.com</a> <span class="bar">|</span> <a href="http://adrenaline4auto.com">home</a> <span class="bar">|</span> <a href="http://adrenaline4auto.com/about.html">about us</a> <span class="bar">|</span> <a href="http://adrenaline4auto.com/services.html">our services</a> <span class="bar">|</span> <a href="http://adrenaline4auto.com/contact.html">contact</a><br /><span class="sm">&copy Copyright Adrenaline Automotive 1998 - 2010 | Designed & Hosted by <a href="http://accentmedia.ca" target="_blank">Accent Media</a></span>
+			
+		</div>
+	
+	</div>
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-10987220-1");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>	
+</body>
+</html>

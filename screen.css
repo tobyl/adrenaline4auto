@@ -1,0 +1,288 @@
+html * {
+	margin: 0;
+	padding: 0;
+
+	text-decoration: none;
+	color: inherit;
+}
+
+a:link, a:visited {
+	color: #262262;
+	
+}
+
+a:hover {
+	color: #c71414;
+}
+
+body {
+	font-family: "Helvetica Neue", Calibri, Arial, sans-serif;
+	font-size: 62.5%;
+	background: url(images/main_bg.jpg) repeat-y #262262;
+	background-position: center top;
+}
+
+#main {
+	width: 898px;
+	font-size: 1.4em;
+	line-height: 1.6em;
+	padding-left: 1px;
+	margin-left: auto;
+	margin-right: auto;
+	background: url(images/lower_bg.jpg) no-repeat;
+	background-position: 1px 480px;
+}
+
+#flash-home {
+	height: 443px;
+	background: url(images/hdr.jpg) no-repeat;
+}
+
+/* navigation styles */
+
+#navi {
+	
+}
+
+#navi li {
+	display: inline;
+	float: left;
+}
+
+#lspace {
+	display: block;
+	width: 22px;
+	height: 42px;
+	background: url(images/left_spacer.jpg) no-repeat;
+}
+
+#rspace {
+	display: block;
+	width: 196px;
+	height: 42px;
+	background: url(images/right_spacer.jpg) no-repeat left top;
+}
+
+#first:link, #first:visited {
+	width: 170px;
+	height: 42px;
+	display: block;
+	background: url(images/about.jpg) no-repeat;
+}
+
+#first:hover {
+	background-position: left bottom;
+}
+
+#second:link, #second:visited {
+	width: 170px;
+	height: 42px;
+	display: block;
+	background: url(images/services.jpg) no-repeat;
+}
+
+#second:hover {
+	background-position: left bottom;
+
+}
+
+#third:link, #third:visited {
+	width: 170px;
+	height: 42px;
+	display: block;
+	background: url(images/articles.jpg) no-repeat;
+}
+
+#third:hover {
+	background-position: left bottom;
+	
+}
+
+#fourth:link, #fourth:visited {
+	width: 170px;
+	height: 42px;
+	display: block;
+	background: url(images/contact.jpg) no-repeat;
+}
+
+#fourth:hover {
+	background-position: left bottom;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #c71414;
+	margin-bottom: 10px;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: #c71414;
+	margin-bottom: 10px;
+}
+
+#footer {
+	clear: both;
+	margin-left: 40px;
+	margin-right: 40px;
+	font-weight: bold;
+	color: #262262;
+	line-height: 27px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	background: url(images/ftr_bg.jpg) repeat-x;
+	background-position: left 10px;
+}
+
+.bar {
+	font-size: 125%;
+	color: #c71414;
+	margin: 0 5px 0 5px;
+}
+
+.sm {
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+/* home styles */
+
+#home-content {
+	clear: both;
+}
+
+#serv-content {
+	clear: both;
+}
+
+#maincol {
+	width: 485px;
+	margin: 40px 0 0 42px;
+	float: left;
+}
+
+#maincolpress {
+	width: 485px;
+	margin: 40px 0 0 42px;
+	float: left;
+}
+
+#maincolpress h3 {
+	margin-top: 25px;
+	color: #777;
+	border-bottom: 1px solid #999;
+}
+
+#maincolpress a:link, #maincolpress a:visited {
+	color: #c71414;
+	line-height: 40px;
+}
+
+#sidebar {
+	width: 250px;
+	margin: 40px 48px 0 0;
+	float: right;
+}
+
+#home-content #maincol ul {
+	font-size: 135%;
+	font-weight: bold;
+	margin: 15px 0 15px 0;
+}
+
+#home-content #maincol ul li {
+	margin-left: 20px;
+	list-style-type: square;
+	margin-bottom: 10px;
+}
+
+/* services page styles */
+
+#whatwedo {
+	list-style-type: square;
+	font-size: 110%;
+	font-weight: bold;
+	margin: 12px 0 0 12px;
+}
+
+#serv-content h4 {
+	color: #c71414;
+	margin-top: 10px;
+}
+
+#whatwedo li {
+	margin-left: 20px;
+	margin-bottom: 6px;
+}
+
+#fourps {
+	list-style-type: none;
+	margin: 12px 0 0 12px;
+}
+
+#fourps li {
+	margin: 0;
+}
+
+.closer {
+	margin-top: 16px;
+	font-weight: bold;
+}
+
+.emph {
+	font-weight: bold;
+	color: #c71414;
+}
+
+/* contact page styles */
+
+#fields label {
+	float: left;
+	width: 150px;
+	line-height: 16px;
+	margin-bottom: 15px;
+}
+
+#fields br {
+	clear: both;
+}
+
+#sidebar ul {
+	list-style-type: none;
+}
+
+#sidebar p {
+	margin-top: 15px;
+}
+
+#sidebar a:link, #sidebar a:visited {
+	color: #262262;
+	
+}
+
+#sidebar a:hover {
+	color: #c71414;
+}
+
+#linkto:link, #linkto:visited {
+	float: right;
+	display: block;
+	width: 159px;
+	height: 159px;
+	background: url(images/link_to.jpg) no-repeat;
+}
+
+#linkto:hover {
+	background-position: left bottom;
+}
+
+.button {
+	margin-top: 15px;
+}
+
+/* hide italics */
+
+i {
+	margin-left: -999em;
+}
+.info_fieldset { -moz-border-radius: 7px; border: 1px solid white; }
